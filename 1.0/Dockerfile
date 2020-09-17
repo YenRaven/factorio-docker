@@ -37,7 +37,8 @@ RUN set -ox pipefail \
     && adduser -u "$PUID" -G "$GROUP" -s /bin/sh -SDH "$USER" \
     && chown -R "$USER":"$GROUP" /opt/factorio /factorio
 
-COPY files/*.sh /
+COPY files/* /
+
 
 VOLUME /factorio
 
