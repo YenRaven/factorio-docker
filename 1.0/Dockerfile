@@ -32,6 +32,7 @@ RUN set -ox pipefail \
     && rm "$archive" \
     && ln -s "$SCENARIOS" /opt/factorio/scenarios \
     && ln -s "$SAVES" /opt/factorio/saves \
+    && mkdir -p /opt/factorio/config/ \
     && ln -s "$CONFIG" /opt/factorio/config \
     && ln -s "$MODS" /opt/factorio/mods \
     && addgroup -g "$PGID" -S "$GROUP" \
@@ -39,7 +40,7 @@ RUN set -ox pipefail \
     && chown -R "$USER":"$GROUP" /opt/factorio /factorio
 
 COPY files/*.sh /
-COPY files/config.ini /factorio/config/config.ini
+COPY files/config.ini /opt/factorio/config/config.ini
 
 VOLUME /factorio
 EXPOSE $PORT/udp $RCON_PORT/tcp
