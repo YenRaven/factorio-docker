@@ -8,7 +8,7 @@ SAVE_NAME="${SAVE_NAME:-""}"
 
 mkdir -p "$FACTORIO_VOL"
 mkdir -p "$SAVES"
-mkdir -p "$CONFIG"
+#mkdir -p "$CONFIG"
 mkdir -p "$MODS"
 mkdir -p "$SCENARIOS"
 mkdir -p "$SCRIPTOUTPUT"
