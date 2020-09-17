@@ -41,6 +41,8 @@ COPY files/*.sh /
 
 VOLUME /factorio
 
+RUN mkdir -p "$CONFIG"
+
 COPY files/config.ini "$CONFIG"
 
 EXPOSE $PORT/udp $RCON_PORT/tcp
