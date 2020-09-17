@@ -32,7 +32,6 @@ RUN set -ox pipefail \
     && rm "$archive" \
     && ln -s "$SCENARIOS" /opt/factorio/scenarios \
     && ln -s "$SAVES" /opt/factorio/saves \
-    && mkdir -p /opt/factorio/config/ \
     && ln -s "$CONFIG" /opt/factorio/config \
     && ln -s "$MODS" /opt/factorio/mods \
     && addgroup -g "$PGID" -S "$GROUP" \
