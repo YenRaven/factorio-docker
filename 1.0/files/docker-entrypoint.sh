@@ -55,9 +55,10 @@ else
   SU_EXEC=""
 fi
 
-
-cp /config.ini "$CONFIG"
-sed -i '/write-data=/c\write-data=\/factorio/' /factorio/config/config.ini
+if [[ ! -f $CONFIG/config.ini ]]; then
+  cp /config.ini "$CONFIG"
+  sed -i '/write-data=/c\write-data=\/factorio/' /factorio/config/config.ini
+fi
 
 NRSAVES=$(find -L "$SAVES" -iname \*.zip -mindepth 1 | wc -l)
 if [[ $GENERATE_NEW_SAVE != true && $NRSAVES ==  0 ]]; then
