@@ -1,0 +1,236 @@
+
+{
+  "mods": 
+  [
+    
+    {
+      "name": "base",
+      "enabled": true
+    },
+    
+    {
+      "name": "aai-vehicles-chaingunner",
+      "enabled": true
+    },
+    
+    {
+      "name": "aai-vehicles-flame-tank",
+      "enabled": true
+    },
+    
+    {
+      "name": "aai-vehicles-laser-tank",
+      "enabled": true
+    },
+    
+    {
+      "name": "aai-vehicles-warden",
+      "enabled": true
+    },
+    
+    {
+      "name": "Aircraft",
+      "enabled": true
+    },
+    
+    {
+      "name": "AircraftRealism",
+      "enabled": true
+    },
+    
+    {
+      "name": "alien-biomes",
+      "enabled": true
+    },
+    
+    {
+      "name": "alien-biomes-hr-terrain",
+      "enabled": true
+    },
+    
+    {
+      "name": "AsphaltRoads",
+      "enabled": true
+    },
+    
+    {
+      "name": "beautiful_bridge_railway",
+      "enabled": true
+    },
+    
+    {
+      "name": "bobenemies",
+      "enabled": true
+    },
+    
+    {
+      "name": "cargo-ships",
+      "enabled": true
+    },
+    
+    {
+      "name": "CorpseFlare",
+      "enabled": true
+    },
+    
+    {
+      "name": "DeadlockMoreTextPlates",
+      "enabled": true
+    },
+    
+    {
+      "name": "Dirt_Path",
+      "enabled": true
+    },
+    
+    {
+      "name": "Flare Stack",
+      "enabled": true
+    },
+    
+    {
+      "name": "FluidMustFlow",
+      "enabled": true
+    },
+    
+    {
+      "name": "heat_glow",
+      "enabled": true
+    },
+    
+    {
+      "name": "HelicopterRevival",
+      "enabled": true
+    },
+    
+    {
+      "name": "MushroomCloud",
+      "enabled": true
+    },
+    
+    {
+      "name": "NextGenEvolution",
+      "enabled": true
+    },
+    
+    {
+      "name": "Noxys_Trees",
+      "enabled": true
+    },
+    
+    {
+      "name": "pushbutton",
+      "enabled": true
+    },
+    
+    {
+      "name": "quickstart",
+      "enabled": true
+    },
+    
+    {
+      "name": "radar-signals",
+      "enabled": true
+    },
+    
+    {
+      "name": "Rampant",
+      "enabled": true
+    },
+    
+    {
+      "name": "RampantArsenal",
+      "enabled": true
+    },
+    
+    {
+      "name": "RealisticDecorationCleanup",
+      "enabled": true
+    },
+    
+    {
+      "name": "RealisticReactors",
+      "enabled": true
+    },
+    
+    {
+      "name": "Realistic_Electric_Trains",
+      "enabled": true
+    },
+    
+    {
+      "name": "rso-mod",
+      "enabled": true
+    },
+    
+    {
+      "name": "ScanningRadar",
+      "enabled": true
+    },
+    
+    {
+      "name": "Soundpack-alerts-and-sirens",
+      "enabled": true
+    },
+    
+    {
+      "name": "stdlib",
+      "enabled": true
+    },
+    
+    {
+      "name": "textplates",
+      "enabled": true
+    },
+    
+    {
+      "name": "traintunnels",
+      "enabled": true
+    },
+    
+    {
+      "name": "WaterAsAResource",
+      "enabled": true
+    },
+    
+    {
+      "name": "WormAttack",
+      "enabled": true
+    },
+    
+    {
+      "name": "CanalBuilder2",
+      "enabled": true
+    },
+    
+    {
+      "name": "Dectorio",
+      "enabled": false
+    },
+    
+    {
+      "name": "SchallVirtualSignal",
+      "enabled": false
+    },
+    
+    {
+      "name": "Warehousing",
+      "enabled": false
+    },
+    
+    {
+      "name": "diplomacy",
+      "enabled": false
+    },
+    
+    {
+      "name": "event-listener",
+      "enabled": true
+    },
+    
+    {
+      "name": "secondary-chat",
+      "enabled": true
+    }
+  ]
+}
