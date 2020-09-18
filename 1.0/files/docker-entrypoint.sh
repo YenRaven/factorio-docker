@@ -57,6 +57,8 @@ fi
 cp /config.ini "$CONFIG"
 sed -i '/write-data=/c\write-data=\/factorio/' /factorio/config/config.ini
 
+cp /mod-list.json "$MODS"
+
 NRSAVES=$(find -L "$SAVES" -iname \*.zip -mindepth 1 | wc -l)
 if [[ $GENERATE_NEW_SAVE != true && $NRSAVES ==  0 ]]; then
     GENERATE_NEW_SAVE=true
