@@ -28,4 +28,7 @@ fi
 if [[ ! -f /opt/factorio/mods ]]; then
   mkdir -p /opt/factorio/mods
 fi
+
+cp /mod-list.json /opt/factorio/mods
+
 ./update-mods.sh "$VERSION" "/opt/factorio/mods" "$USERNAME" "$TOKEN"
