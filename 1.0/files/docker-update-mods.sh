@@ -25,4 +25,7 @@ if [[ -z ${TOKEN:-} ]]; then
   echo "You need to provide your Factorio token to update mods."
 fi
 
+if [[ ! -f /opt/factorio/mods ]]; then
+  mkdir -p /opt/factorio/mods
+fi
 ./update-mods.sh "$VERSION" "/opt/factorio/mods" "$USERNAME" "$TOKEN"
