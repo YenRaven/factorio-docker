@@ -23,15 +23,15 @@ if [[ ! -f $CONFIG/server-settings.json ]]; then
   cp /opt/factorio/data/server-settings.example.json "$CONFIG/server-settings.json"
 fi
 
-if [[ -z "${USERNAME:-}"]]; then
-  sed -i '/"username":/c\"username":"${USERNAME:-}",/' "$CONFIG/server-settings.json"
-  sed -i '/"token":/c\"token":"${TOKEN:-}",/' "$CONFIG/server-settings.json"
+if [[ -z "$USERNAME"]]; then
+  sed -i '/"username":/c\"username":"$USERNAME",/' "$CONFIG/server-settings.json"
+  sed -i '/"token":/c\"token":"$TOKEN",/' "$CONFIG/server-settings.json"
 fi
-if [[ -z "${GAME_NAME:-}"]]; then
-  sed -i '/"name":/c\"name":"${GAME_NAME:-}",/' "$CONFIG/server-settings.json"
+if [[ -z "$GAME_NAME"]]; then
+  sed -i '/"name":/c\"name":"$GAME_NAME",/' "$CONFIG/server-settings.json"
 fi
-if [[ -z "${GAME_DESC:-}"]]; then
-  sed -i '/"description":/c\"description":"${GAME_DESC:-}",/' "$CONFIG/server-settings.json"
+if [[ -z "$GAME_DESC"]]; then
+  sed -i '/"description":/c\"description":"$GAME_DESC",/' "$CONFIG/server-settings.json"
 fi
 
 if [[ ! -f $CONFIG/map-gen-settings.json ]]; then
