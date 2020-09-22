@@ -24,16 +24,16 @@ if [[ ! -f $CONFIG/server-settings.json ]]; then
 fi
 
 if [[ -n ${USERNAME:-} ]]; then
-  sed -i "/\"username\":/c\\"    username\":\"$USERNAME\"," "$CONFIG/server-settings.json"
-  sed -i "/\"token\":/c\\"    token\":\"$TOKEN\"," "$CONFIG/server-settings.json"
+  sed -i "/\"username\":/c\    \"username\":\"$USERNAME\"," "$CONFIG/server-settings.json"
+  sed -i "/\"token\":/c\    \"token\":\"$TOKEN\"," "$CONFIG/server-settings.json"
 fi
 
 if [[ -n ${GAME_NAME:-} ]]; then
-  sed -i "/\"name\":/c\\"    name\":\"$GAME_NAME\"," "$CONFIG/server-settings.json"
+  sed -i "/\"name\":/c\    \"name\":\"$GAME_NAME\"," "$CONFIG/server-settings.json"
 fi
 
 if [[ -n ${GAME_DESC:-} ]]; then
-  sed -i "/\"description\":/c\\"    description\":\"$GAME_DESC\"," "$CONFIG/server-settings.json"
+  sed -i "/\"description\":/c\    \"description\":\"$GAME_DESC\"," "$CONFIG/server-settings.json"
 fi
 
 if [[ ! -f $CONFIG/map-gen-settings.json ]]; then
