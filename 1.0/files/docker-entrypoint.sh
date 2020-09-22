@@ -23,12 +23,12 @@ if [[ ! -f $CONFIG/server-settings.json ]]; then
   cp /opt/factorio/data/server-settings.example.json "$CONFIG/server-settings.json"
 fi
 
-if [[ -n ${USERNAME:-} ]]; then
-  sed -i "/\"username\":/c\  \"username\":\"$USERNAME\"," "$CONFIG/server-settings.json"
-fi
-
 if [[ -n ${TOKEN:-} ]]; then
   sed -i "/\"token\":/c\  \"token\":\"$TOKEN\"," "$CONFIG/server-settings.json"
+fi
+
+if [[ -n ${USERNAME:-} ]]; then
+  sed -i "/\"username\":/c\  \"username\":\"$USERNAME\"," "$CONFIG/server-settings.json"
 fi
 
 if [[ -n ${GAME_NAME:-} ]]; then
