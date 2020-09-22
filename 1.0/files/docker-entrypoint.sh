@@ -28,7 +28,7 @@ if [[ -n ${TOKEN:-} ]]; then
 fi
 
 if [[ -n ${USERNAME:-} ]]; then
-  sed -i "/\"username\":/c\  \"username\":\"$USERNAME\"," "$CONFIG/server-settings.json"
+  sed -i "/\"username\":/c\  \n  \"username\":\"$USERNAME\"," "$CONFIG/server-settings.json"
 fi
 
 if [[ -n ${GAME_NAME:-} ]]; then
