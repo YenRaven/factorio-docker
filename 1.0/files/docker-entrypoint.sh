@@ -97,7 +97,6 @@ fi
 
 FLAGS=(\
   --port "$PORT" \
-  --bind "$BIND" \
   --mp-connect "$MP_CONNECT" \
   --server-settings "$CONFIG/server-settings.json" \
   --server-banlist "$CONFIG/server-banlist.json" \
