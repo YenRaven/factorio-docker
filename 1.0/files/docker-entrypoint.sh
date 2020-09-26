@@ -97,7 +97,6 @@ fi
 
 FLAGS=(\
   --port "$PORT" \
-  --mp-connect "$MP_CONNECT" \
   --server-settings "$CONFIG/server-settings.json" \
   --server-banlist "$CONFIG/server-banlist.json" \
   --rcon-port "$RCON_PORT" \
