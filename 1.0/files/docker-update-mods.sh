@@ -31,4 +31,4 @@ fi
 
 cp /mod-list.json /opt/factorio/mods
 
-./update-mods.sh "$VERSION" "/opt/factorio/mods" "$USERNAME" "$TOKEN"
+./update-mods.sh "$VERSION" "$MODS" "$USERNAME" "$TOKEN"
